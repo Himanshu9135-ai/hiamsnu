@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding: 0%;
+}
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x:hidden;
+}
+/* hero section */
+#hero{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(resturant2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(50%);
+}
+#hero_content{
+    position: absolute;
+
+}
+#hero_content h1{
+    color: aqua;
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px #111;
+}
+#hero_content h2{
+    color: aqua;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-top: 1.5rem;
+    margin-bottom: 4.5rem;
+    text-shadow: 3px 3px 3px #111;
+}
+#hero_content a{
+    color: azure;
+   
+    padding: 3px 20px 3px 20px;
+    border: 1px solid yellow;
+    background: rgb(red, green, blue);
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 30px;
+}
+#hero_content a:hover{
+    background: orange;
+}
+/* Header section */
+#Header{
+    position: fixed;
+    top: 0%;
+    height: 80px;
+    width: 100vw;
+    line-height: 80px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+   background: rgb(0 , 0 , 0 , 0.3);
+}
+#navbar h1{
+    color: gold;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px #000;
+    font-family: cursive;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 3px 20px 3px 20px;
+}
+#navbar ul li:hover,#phone a:hover{
+    background: navy;
+    cursor: pointer;
+}
+#navbar ul li a{
+    list-style: none;
+    color: khaki;
+    font-size: 2rem;
+}
+#phone a{
+    list-style: none;
+    color: khaki;
+    font-size: 2rem;
+    padding: 3px 20px 3px 20px;
+    border: 2px solid orangre;
+}
+/* menu section */
+#menu{
+    padding: 30px 0 30px 0;
+}
+#section{
+    padding: 30px 0 30px 0;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#menu_row{
+    display: flex;
+    padding: 0 100px 0 100px;
+}
+#menu_col{
+    box-shadow: 2px 2px 2px #bbb;
+    border: 2px solid #bbb;
+    background-color: azure;
+    margin: 10px;
+    padding: 10px;
+    flex: 1px;
+
+}
+#menu_col h2{
+    background-color: violet;
+    color: beige;
+    text-align: center;
+    padding: 6px;
+    font-family: cursive;
+}
+#image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5%;
+    border: 3px solid orange;
+}
+#image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   object-fit: cover;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+#chef{
+    padding: 20px 0 20px 0;
+}
+#chef_row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.chef_col{
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+#img{
+    width: 200px;
+    height: 250px;
+    margin: auto;
+}
+#img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order_col{
+    display: flex;
+   height: 100%;
+    width: 80%;
+    align-items: center;
+    
+    
+}
+.order_col form h2{
+    text-align: center;
+    font-family: cursive;
+}
+.order_col form input{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.order_col form button{
+    margin: auto;
+    padding: 10px;
+    background-color: magenta;
+}
+#About{
+    align-content: center;
+    border: #111;
+    border-color: blue;
+
+}
+.About_col{
+    background-color: aquamarine;
+}
+.About_col h1{
+    align-content: center;
+    color: coral;
+    font-weight: bold;
+}
+.About_col p{
+    align-content: center;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 20px 55px 20px 55px;
+}
+
+
+ @media screen and (max- width : 780px) {
+    #header{
+        position: absolute;
+    }
+    #mobile_menu{
+        display: block;
+    }
+    #navbar ul{
+        display: none;
+    }
+    html{
+        font-size: 93%;
+    }
+    #menu_row{
+        flex-wrap: wrap;
+        padding: 0 10px 0 10px;
+    }
+ }
+ @media screen and (max-width : 360px) {
+    html{
+
+    }
+ }
